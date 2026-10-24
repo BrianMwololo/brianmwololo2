@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Mwololo — Curriculum Vitae</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --ai: #7c3aed;
+            --annotation: #d97706;
+            --cyber: #dc2626;
+            --robotics: #059669;
+            --dark: #0f172a;
+            --mid: #1e293b;
+            --muted: #64748b;
+            --light: #f8fafc;
+            --border: #e2e8f0;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            background: #f1f5f9;
+            color: var(--mid);
+            line-height: 1.6;
+        }
+
+        /* ── DOWNLOAD BAR ── */
+        .download-bar {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 999;
+            background: var(--dark);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 40px;
+            gap: 16px;
+        }
+
+        .download-bar p {
+            color: #94a3b8;
+            font-size: 0.88rem;
+        }
+
+        .download-bar strong { color: #e2e8f0; }
+
+        .dl-buttons { display: flex; gap: 12px; }
+
+        .btn-dl {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 9px 22px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.88rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-dl:hover { background: var(--primary-dark); transform: translateY(-1px); }
+
+        .btn-back {
+            background: transparent;
+            color: #94a3b8;
+            border: 1px solid #334155;
+            padding: 9px 18px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.88rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-back:hover { color: white; border-color: #64748b; }
+
+        /* ── CV WRAPPER ── */
+        .cv-wrapper {
+            margin-top: 60px;
+            padding: 30px 20px 60px;
+        }
+
+        #cv-content {
+            max-width: 860px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px -20px rgba(0,0,0,0.18);
+        }
+
+        /* ── HEADER BAND ── */
+        .cv-header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1d4ed8 100%);
+            padding: 44px 48px;
+            display: flex;
+            gap: 36px;
+            align-items: flex-start;
+        }
+
+        .cv-photo {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255,255,255,0.2);
+            flex-shrink: 0;
+        }
+
+        .cv-photo-placeholder {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.12);
+            border: 4px solid rgba(255,255,255,0.2);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: rgba(255,255,255,0.7);
+        }
+
+        .cv-header-info { flex: 1; }
+
+        .cv-name {
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: white;
+            letter-spacing: -0.5px;
+            line-height: 1.15;
+            margin-bottom: 6px;
+        }
+
+        .cv-title {
+            font-size: 1.05rem;
+            color: #93c5fd;
+            font-weight: 500;
+            margin-bottom: 18px;
+        }
+
+        .cv-contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .cv-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #cbd5e1;
+            font-size: 0.83rem;
+            font-weight: 500;
+        }
+
+        .cv-contact-item span.icon { font-size: 0.95rem; }
+
+        .cv-contact-item a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .domain-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 18px;
+        }
+
+        .domain-pill {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: #e2e8f0;
+            padding: 4px 12px;
+            border-radius: 999px;
+            font-size: 0.76rem;
+            font-weight: 700;
+        }
+
+        /* ── BODY LAYOUT ── */
+        .cv-body {
+            display: grid;
+            grid-template-columns: 1fr 2.2fr;
+        }
+
+        /* ── LEFT SIDEBAR ── */
+        .cv-sidebar {
+            background: #f8fafc;
+            padding: 32px 28px;
+            border-right: 1px solid var(--border);
+        }
+
+        /* ── MAIN CONTENT ── */
+        .cv-main {
+            padding: 36px 40px;
+        }
+
+        /* ── SECTION BLOCKS ── */
+        .cv-section { margin-bottom: 30px; }
+        .cv-section:last-child { margin-bottom: 0; }
+
+        .cv-section-title {
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #dbeafe;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .cv-section-title.ai-color    { color: var(--ai);         border-bottom-color: #ddd6fe; }
+        .cv-section-title.cyber-color { color: var(--cyber);      border-bottom-color: #fecaca; }
+        .cv-section-title.bot-color   { color: var(--robotics);   border-bottom-color: #a7f3d0; }
+
+        /* ── PROFILE TEXT ── */
+        .profile-text {
+            font-size: 0.92rem;
+            color: var(--mid);
+            line-height: 1.75;
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .highlight-item {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 12px;
+            background: #f8fafc;
+        }
+
+        .highlight-item strong {
+            display: block;
+            color: var(--dark);
+            font-size: 0.84rem;
+            margin-bottom: 3px;
+        }
+
+        .highlight-item span {
+            display: block;
+            color: var(--muted);
+            font-size: 0.76rem;
+            line-height: 1.45;
+        }
+
+        /* ── EXPERIENCE ENTRIES ── */
+        .exp-entry { margin-bottom: 22px; }
+        .exp-entry:last-child { margin-bottom: 0; }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 3px;
+        }
+
+        .exp-company {
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 2px;
+        }
+
+        .exp-company.ai-co    { color: var(--ai); }
+        .exp-company.cyber-co { color: var(--cyber); }
+        .exp-company.bot-co   { color: var(--robotics); }
+
+        .exp-role {
+            font-size: 0.97rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .exp-date {
+            font-size: 0.76rem;
+            font-weight: 600;
+            color: var(--muted);
+            white-space: nowrap;
+            background: #f1f5f9;
+            padding: 3px 9px;
+            border-radius: 6px;
+            flex-shrink: 0;
+        }
+
+        .exp-summary {
+            font-size: 0.88rem;
+            color: var(--mid);
+            margin: 4px 0 6px;
+            font-style: italic;
+        }
+
+        .exp-list {
+            padding-left: 16px;
+            list-style: none;
+        }
+
+        .exp-list li {
+            font-size: 0.86rem;
+            color: var(--mid);
+            margin-bottom: 4px;
+            line-height: 1.55;
+            padding-left: 14px;
+            position: relative;
+        }
+
+        .exp-list li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-size: 0.7rem;
+            top: 2px;
+        }
+
+        .exp-tools {
+            font-size: 0.78rem;
+            color: var(--muted);
+            margin-top: 6px;
+            font-weight: 500;
+        }
+
+        .exp-tools strong { color: var(--mid); }
+
+        /* Divider between experience entries */
+        .exp-divider {
+            height: 1px;
+            background: var(--border);
+            margin: 18px 0;
+        }
+
+        /* ── SIDEBAR SKILL BARS ── */
+        .skill-item { margin-bottom: 12px; }
+
+        .skill-label {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--mid);
+            margin-bottom: 4px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skill-bar-bg {
+            height: 5px;
+            background: #e2e8f0;
+            border-radius: 999px;
+            overflow: hidden;
+        }
+
+        .skill-bar-fill {
+            height: 100%;
+            border-radius: 999px;
+            background: linear-gradient(90deg, var(--primary), #60a5fa);
+        }
+
+        /* ── TOOL TAGS ── */
+        .tool-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+
+        .tool-tag {
+            background: #eff6ff;
+            color: #1e40af;
+            border: 1px solid #bfdbfe;
+            border-radius: 6px;
+            font-size: 0.73rem;
+            font-weight: 600;
+            padding: 3px 8px;
+        }
+
+        .tool-tag.ai   { background: #f5f3ff; color: var(--ai); border-color: #ddd6fe; }
+        .tool-tag.ann  { background: #fffbeb; color: var(--annotation); border-color: #fde68a; }
+        .tool-tag.cyb  { background: #fef2f2; color: var(--cyber); border-color: #fecaca; }
+        .tool-tag.bot  { background: #ecfdf5; color: var(--robotics); border-color: #a7f3d0; }
+
+        /* ── EDUCATION ── */
+        .edu-entry { margin-bottom: 14px; }
+
+        .edu-degree {
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .edu-school {
+            font-size: 0.82rem;
+            color: var(--muted);
+            margin: 2px 0;
+        }
+
+        .edu-note {
+            font-size: 0.78rem;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+
+        /* ── CERTIFICATIONS ── */
+        .cert-item {
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+
+        .cert-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--primary);
+            flex-shrink: 0;
+            margin-top: 5px;
+        }
+
+        .cert-text {
+            font-size: 0.82rem;
+            color: var(--mid);
+            line-height: 1.5;
+        }
+
+        /* ── CONTACT SIDEBAR ── */
+        .contact-item {
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+
+        .contact-icon { font-size: 0.9rem; flex-shrink: 0; margin-top: 1px; }
+
+        .contact-text a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contact-text {
+            font-size: 0.82rem;
+            color: var(--mid);
+            word-break: break-all;
+            line-height: 1.4;
+        }
+
+        /* ── AVAILABILITY CHIP ── */
+        .avail-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #ecfdf5;
+            border: 1px solid #a7f3d0;
+            color: var(--robotics);
+            padding: 5px 12px;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 700;
+        }
+
+        .avail-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--robotics);
+            border-radius: 50%;
+        }
+
+        /* ── SUBSECTION LABEL ── */
+        .sub-label {
+            font-size: 0.73rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+
+        .sub-label.ai   { background: #f5f3ff; color: var(--ai); }
+        .sub-label.soft { background: #eff6ff; color: var(--primary); }
+
+        /* ── PROJECT ENTRIES ── */
+        .project-entry { margin-bottom: 14px; }
+
+        .project-name {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .project-desc {
+            font-size: 0.82rem;
+            color: var(--muted);
+            margin-top: 2px;
+            line-height: 1.5;
+        }
+
+        .project-desc a {
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        /* ── PRINT ── */
+        @media print {
+            .download-bar { display: none !important; }
+            .cv-wrapper { margin-top: 0; padding: 0; }
+            body { background: white; }
+            #cv-content {
+                box-shadow: none;
+                border-radius: 0;
+                max-width: 100%;
+            }
+            .cv-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .cv-sidebar { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .skill-bar-fill { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+
+        @media (max-width: 680px) {
+            .cv-body { grid-template-columns: 1fr; }
+            .cv-sidebar { border-right: none; border-bottom: 1px solid var(--border); }
+            .cv-header { flex-direction: column; gap: 20px; padding: 30px 24px; }
+            .cv-main { padding: 24px; }
+            .download-bar { flex-direction: column; padding: 12px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ── DOWNLOAD BAR ── -->
+<div class="download-bar">
+    <p><strong>Brian Mwololo</strong> — Curriculum Vitae &nbsp;·&nbsp; Web Research Specialist | LLM Evaluation | Open-Web Research</p>
+    <div class="dl-buttons">
+        <a href="../index.html" class="btn-back">← Back to Portfolio</a>
+        <button class="btn-dl" onclick="downloadPDF()">⬇ Download PDF</button>
+    </div>
+</div>
+
+<div class="cv-wrapper">
+<div id="cv-content">
+
+    <!-- ── HEADER ── -->
+    <div class="cv-header">
+        <img src="../images/20240124_170513.jpg" alt="Brian Mwololo" class="cv-photo"
+             onerror="this.style.display='none';document.querySelector('.cv-photo-fallback').style.display='flex'">
+        <div class="cv-photo-fallback cv-photo-placeholder" style="display:none;">BM</div>
+        <div class="cv-header-info">
+            <div class="cv-name">Brian Mwololo</div>
+            <div class="cv-title">Web Research Specialist | LLM Evaluation | Open-Web Research | AI Quality Analyst</div>
+            <div class="cv-contact-row">
+                <div class="cv-contact-item"><span class="icon">📍</span> Nairobi, Kenya</div>
+                <div class="cv-contact-item"><span class="icon">📞</span> <a href="tel:+254799114352">+254 799 114 352</a></div>
+                <div class="cv-contact-item"><span class="icon">✉️</span> <a href="mailto:brianmwololo89@gmail.com">brianmwololo89@gmail.com</a></div>
+                <div class="cv-contact-item"><span class="icon">in</span> <a href="https://www.linkedin.com/in/brian-mwololo-08a956387/">linkedin.com/in/brian-mwololo-08a956387</a></div>
+                <div class="cv-contact-item"><span class="icon">🌐</span> portfolio-ecru-theta-47.vercel.app</div>
+                <div class="cv-contact-item"><span class="icon">💻</span> github.com/BrianMwololo</div>
+            </div>
+            <div class="domain-pills">
+                <span class="domain-pill">🔍 Open-Web Research</span>
+                <span class="domain-pill">🤖 LLM Evaluation</span>
+                <span class="domain-pill">📄 Source Documentation</span>
+                <span class="domain-pill">🏛️ Gov/Institutional DBs</span>
+                <span class="domain-pill">💻 RLHF &amp; Benchmarking</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── BODY ── -->
+    <div class="cv-body">
+
+        <!-- ═══ LEFT SIDEBAR ═══ -->
+        <aside class="cv-sidebar">
+
+            <div class="cv-section">
+                <div class="avail-chip"><div class="avail-dot"></div> Open to Opportunities</div>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="cv-section">
+                <div class="cv-section-title">Contact</div>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <span class="contact-text">Nairobi, Kenya<br>Remote / On-site</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <span class="contact-text"><a href="tel:+254799114352">+254 799 114 352</a></span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <span class="contact-text"><a href="mailto:brianmwololo89@gmail.com">brianmwololo89@gmail.com</a></span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">in</span>
+                    <span class="contact-text"><a href="https://www.linkedin.com/in/brian-mwololo-08a956387/">linkedin.com/in/brian-mwololo-08a956387</a></span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🌐</span>
+                    <span class="contact-text">portfolio-ecru-theta-47.vercel.app</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">💻</span>
+                    <span class="contact-text">github.com/BrianMwololo</span>
+                </div>
+            </div>
+
+            <!-- CORE SKILLS -->
+            <div class="cv-section">
+                <div class="cv-section-title">Core Proficiencies</div>
+
+                <div class="skill-item">
+                    <div class="skill-label"><span>Data Annotation Specialist</span><span>96%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:96%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Attention to Detail</span><span>95%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:95%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Critical Thinking</span><span>92%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:92%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Communication</span><span>90%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Remote Collaboration</span><span>90%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>AI Training / RLHF</span><span>90%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Full-Stack Development</span><span>85%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Cybersecurity</span><span>75%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:75%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Python / Scripting</span><span>80%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:80%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>IoT / Robotics</span><span>65%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:65%"></div></div>
+                </div>
+            </div>
+
+            <!-- AI PLATFORMS -->
+            <div class="cv-section">
+                <div class="cv-section-title ai-color">AI Platforms</div>
+                <div class="tool-tags">
+                    <span class="tool-tag ai">Outlier AI</span>
+                    <span class="tool-tag ai">Appen</span>
+                    <span class="tool-tag ai">Remotasks</span>
+                    <span class="tool-tag ai">Toloka AI</span>
+                    <span class="tool-tag ai">Scale AI</span>
+                    <span class="tool-tag ai">Argilla</span>
+                </div>
+            </div>
+
+            <!-- ANNOTATION TOOLS -->
+            <div class="cv-section">
+                <div class="cv-section-title" style="color: #d97706; border-bottom-color: #fde68a;">Annotation Tools</div>
+                <div class="tool-tags">
+                    <span class="tool-tag ann">CVAT</span>
+                    <span class="tool-tag ann">Label Studio</span>
+                    <span class="tool-tag ann">Labelbox</span>
+                    <span class="tool-tag ann">Roboflow</span>
+                    <span class="tool-tag ann">Prodigy</span>
+                </div>
+            </div>
+
+            <!-- CYBERSECURITY TOOLS -->
+            <div class="cv-section">
+                <div class="cv-section-title cyber-color">Security Tools</div>
+                <div class="tool-tags">
+                    <span class="tool-tag cyb">Kali Linux</span>
+                    <span class="tool-tag cyb">Wireshark</span>
+                    <span class="tool-tag cyb">Burp Suite</span>
+                    <span class="tool-tag cyb">Nmap</span>
+                    <span class="tool-tag cyb">Metasploit</span>
+                </div>
+            </div>
+
+            <!-- DEV STACK -->
+            <div class="cv-section">
+                <div class="cv-section-title">Dev Stack</div>
+                <div class="tool-tags">
+                    <span class="tool-tag">Python</span>
+                    <span class="tool-tag">JavaScript</span>
+                    <span class="tool-tag">React</span>
+                    <span class="tool-tag">Node.js</span>
+                    <span class="tool-tag">HTML/CSS</span>
+                    <span class="tool-tag">MySQL</span>
+                    <span class="tool-tag">Firebase</span>
+                    <span class="tool-tag">Git</span>
+                    <span class="tool-tag">Figma</span>
+                </div>
+            </div>
+
+            <!-- EDUCATION -->
+            <div class="cv-section">
+                <div class="cv-section-title">Education</div>
+                <div class="edu-entry">
+                    <div class="edu-degree">BSc Applied Computing</div>
+                    <div class="edu-school">University — Kenya</div>
+                    <div class="edu-note">Software Engineering · Databases · Networking · Cybersecurity · HCI · Mobile Dev</div>
+                </div>
+            </div>
+
+            <!-- CERTIFICATIONS -->
+            <div class="cv-section">
+                <div class="cv-section-title">Certifications</div>
+                <div class="cert-item">
+                    <div class="cert-dot" style="background:var(--ai)"></div>
+                    <div class="cert-text">Remotasks Bronze & Silver Proficiency (2D, 3D annotation)</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-dot" style="background:var(--ai)"></div>
+                    <div class="cert-text">Outlier AI — Active AI Training Specialist</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-dot" style="background:var(--ai)"></div>
+                    <div class="cert-text">Appen Connect — Maintained Quality Scores</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-dot" style="background:var(--cyber)"></div>
+                    <div class="cert-text">Cybersecurity: TryHackMe, OWASP self-directed study</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-dot"></div>
+                    <div class="cert-text">Google IT Support (coursework equivalent)</div>
+                </div>
+            </div>
+
+            <!-- LANGUAGES -->
+            <div class="cv-section">
+                <div class="cv-section-title">Languages</div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>English</span><span>Fluent</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:95%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Swahili</span><span>Native</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:100%"></div></div>
+                </div>
+            </div>
+
+            <!-- AFFILIATION -->
+            <div class="cv-section">
+                <div class="cv-section-title">Affiliation</div>
+                <div class="cert-text">Flawless Consulting Consortium Limited — Technology Contributor</div>
+            </div>
+
+        </aside>
+
+        <!-- ═══ MAIN CONTENT ═══ -->
+        <main class="cv-main">
+
+            <!-- PROFILE -->
+            <div class="cv-section">
+                <div class="cv-section-title">Professional Profile</div>
+                <p class="profile-text">
+                    BSc Applied Computing graduate with over 3 years of hands-on experience in data annotation, AI model evaluation, and software delivery. I work across Outlier AI (Scale AI), Appen, Remotasks, and Toloka AI — producing high-quality labeled datasets for computer vision, NLP, speech, audio, video, 3D lidar, and RLHF fine-tuning pipelines. My strongest field is data annotation, combined with AI training support, LLM evaluation, secure web platform delivery, and digital operations dashboards.
+                </p>
+                <p class="profile-text" style="margin-top: 10px;">
+                    I bring a rare combination of analytical precision, strong written communication, and remote work discipline that consistently keeps my annotation quality scores above acceptance thresholds across all platforms. I have evaluated 200+ LLM tasks, labeled thousands of images and documents, and delivered live web applications with role-based access control and audit logging.
+                </p>
+                <div class="highlights-grid">
+                    <div class="highlight-item"><strong>Data Annotation Specialist</strong><span>Bounding boxes, polygons, segmentation masks, 3D lidar, NER, intent classification, transcription, video tracking, and multi-label QA across CV and NLP datasets.</span></div>
+                    <div class="highlight-item"><strong>Critical Thinking &amp; Quality Judgment</strong><span>Careful guideline interpretation, edge-case analysis, error spotting, and consistent annotation decisions across high-ambiguity tasks.</span></div>
+                    <div class="highlight-item"><strong>Attention to Detail</strong><span>Precise labeling, clean categorization, structured QA, accurate record keeping, thorough review, and zero tolerance for systematic errors.</span></div>
+                    <div class="highlight-item"><strong>Communication &amp; Remote Work</strong><span>Clear written justifications, structured feedback, concise rationale writing, async collaboration, and consistent performance without direct supervision.</span></div>
+                </div>
+            </div>
+
+            <!-- AI TRAINING EXPERIENCE -->
+            <div class="cv-section">
+                <div class="cv-section-title ai-color">🤖 AI Training & Data Annotation Experience</div>
+
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <div>
+                            <div class="exp-company ai-co">Outlier AI (Scale AI)</div>
+                            <div class="exp-role">Data Annotation & AI Training Specialist — Freelance</div>
+                        </div>
+                        <span class="exp-date">2025 – Present</span>
+                    </div>
+                    <p class="exp-summary">Evaluates and ranks LLM outputs across coding, reasoning, and creative writing tasks for RLHF fine-tuning pipelines. Consistently maintains quality scores above platform benchmarks.</p>
+                    <ul class="exp-list">
+                        <li>Performed side-by-side (SxS) response comparison and preference ranking for LLM outputs across <strong>200+ evaluation tasks</strong> — scoring on helpfulness, accuracy, naturalness, and instruction-following.</li>
+                        <li>Wrote detailed quality annotations with turn-level justifications referencing evaluation criteria, specific response characteristics, and quality flags to strengthen model feedback loops.</li>
+                        <li>Reviewed AI-generated code (Python, JavaScript, SQL) for correctness, efficiency, reasoning quality, and adherence to security best practices.</li>
+                        <li>Flagged harmful, biased, and factually incorrect outputs following platform safety annotation guidelines — contributing to safer and more aligned model behavior.</li>
+                        <li>Designed multi-turn evaluation prompts from diverse personal contexts to thoroughly probe model personalization and instruction-following capabilities.</li>
+                        <li>Maintained annotation accuracy <strong>consistently above platform quality benchmarks</strong> across coding, reasoning, and creative writing evaluation projects.</li>
+                    </ul>
+                    <div class="exp-tools"><strong>Platforms:</strong> Outlier AI interface · RLHF ranking tools · Scale AI tasking portal</div>
+                </div>
+
+                <div class="exp-divider"></div>
+
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <div>
+                            <div class="exp-company ai-co">Appen</div>
+                            <div class="exp-role">Data Annotator & AI Trainer — Freelance</div>
+                        </div>
+                        <span class="exp-date">2024 – Present</span>
+                    </div>
+                    <p class="exp-summary">Completes AI data projects across search relevance, image labeling, NLP, speech, and conversational AI — maintaining quality scores above acceptance thresholds across all project types.</p>
+                    <ul class="exp-list">
+                        <li>Rated search engine result relevance for <strong>multiple locales and query types</strong> — consistently scoring above acceptance threshold, developing strong understanding of grounding and contextual integration.</li>
+                        <li>Annotated images with bounding boxes, classification labels, and semantic tags for computer vision datasets across multiple product categories.</li>
+                        <li>Evaluated chatbot and virtual assistant responses for naturalness, helpfulness, accuracy, and safety — closely aligned with personalization quality assessment methodologies.</li>
+                        <li>Transcribed and quality-checked audio recordings (including diverse accents and noisy environments) for speech recognition model improvement.</li>
+                        <li>Contributed to social media content relevance and safety evaluation projects requiring nuanced quality judgment on ambiguous edge-case responses.</li>
+                        <li>Applied detailed annotation guidelines consistently across <strong>high-volume tasks</strong>, writing concise, well-justified evaluation rationales for AI response comparisons.</li>
+                    </ul>
+                    <div class="exp-tools"><strong>Platforms:</strong> Appen Connect · Figure Eight annotation tools</div>
+                </div>
+
+                <div class="exp-divider"></div>
+
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <div>
+                            <div class="exp-company ai-co">Remotasks (Scale AI)</div>
+                            <div class="exp-role">AI Data Specialist — Freelance</div>
+                        </div>
+                        <span class="exp-date">2024 – Present</span>
+                    </div>
+                    <p class="exp-summary">Handles high-volume 3D lidar, image segmentation, and lane-detection annotation for autonomous vehicle and robotics AI systems — achieving certified proficiency across multiple task types.</p>
+                    <ul class="exp-list">
+                        <li>Labeled 3D lidar point clouds with semantic segmentation for autonomous vehicle perception models — correctly categorizing vehicles, pedestrians, cyclists, and road infrastructure.</li>
+                        <li>Drew polygon and cuboid annotations on camera images for object detection and instance segmentation pipelines used in self-driving car development.</li>
+                        <li>Completed lane detection, traffic sign classification, and pedestrian annotation tasks for self-driving datasets with strict quality and consistency requirements.</li>
+                        <li>Participated in quality assurance review rounds — catching and correcting annotation errors in collaborative team projects, improving overall dataset accuracy.</li>
+                        <li>Applied strict guideline interpretation for ambiguous edge cases requiring careful analytical judgment and knowledge of escalation protocols.</li>
+                        <li>Achieved <strong>Bronze and Silver proficiency certifications</strong> across multiple 2D and 3D annotation task types on the Remotasks platform.</li>
+                    </ul>
+                    <div class="exp-tools"><strong>Platforms:</strong> Remotasks · Scale AI 3D/2D annotation tools · lidar labeling UIs</div>
+                </div>
+
+                <div class="exp-divider"></div>
+
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <div>
+                            <div class="exp-company ai-co">Toloka AI (Yandex)</div>
+                            <div class="exp-role">Crowdsourcing Annotator — Freelance</div>
+                        </div>
+                        <span class="exp-date">2023 – Present</span>
+                    </div>
+                    <p class="exp-summary">Contributes to global AI datasets for image classification, text categorization, and search relevance — maintaining consistently high acceptance rates through disciplined guideline adherence.</p>
+                    <ul class="exp-list">
+                        <li>Classified images into predefined categories for computer vision classification model training across diverse product and environment domains.</li>
+                        <li>Assessed web page quality and search engine result relevance for AI dataset improvement — applying personalization and contextual grounding judgment.</li>
+                        <li>Compared and categorized product listings, news articles, and social content for NLP classification and relevance ranking tasks.</li>
+                        <li>Maintained <strong>consistently high acceptance rates</strong> through disciplined guideline adherence and careful self-review across large task pools and quality-control checkpoints.</li>
+                    </ul>
+                    <div class="exp-tools"><strong>Platforms:</strong> Toloka platform · quality-control pool management</div>
+                </div>
+            </div>
+
+            <!-- SOFTWARE EXPERIENCE -->
+            <div class="cv-section">
+                <div class="cv-section-title">💻 Software &amp; IT Experience</div>
+
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <div>
+                            <div class="exp-company">Ministry of Education</div>
+                            <div class="exp-role">DLP Intern</div>
+                        </div>
+                        <span class="exp-date">Oct 2025 – Present</span>
+                    </div>
+                    <p class="exp-summary">Supporting education data management systems — improving data quality, reporting clarity, and digital workflow efficiency across ministry departments.</p>
+                    <ul class="exp-list">
+                        <li>Developed and maintained software dashboards for education management, student records, and data reporting workflows across multiple departments.</li>
+                        <li>Improved data entry and validation processes — identifying and correcting inconsistencies in government education databases, reducing data error rates.</li>
+                        <li>Applied data protection, access control, and confidentiality principles aligned with institutional data governance and compliance requirements.</li>
+                        <li>Documented internal digital platform workflows, improving handoff clarity and usability for non-technical staff members.</li>
+                        <li>Collaborated with senior staff to streamline digital reporting procedures and reduce manual data reconciliation workload.</li>
+                    </ul>
+                </div>
+
+                <div class="exp-divider"></div>
+
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <div>
+                            <div class="exp-company">Lukenya College</div>
+                            <div class="exp-role">ICT Tutor</div>
+                        </div>
+                        <span class="exp-date">Sep 2024 – Nov 2025</span>
+                    </div>
+                    <p class="exp-summary">Delivered structured ICT curriculum covering programming, networking, cybersecurity, and emerging AI technologies to diverse student cohorts.</p>
+                    <ul class="exp-list">
+                        <li>Delivered practical sessions in programming (Python, JavaScript), networking fundamentals, and cybersecurity to diverse student groups of 20–40 students per session.</li>
+                        <li>Introduced AI fundamentals and data annotation concepts, preparing students for emerging technology career opportunities in AI and machine learning.</li>
+                        <li>Created accessible teaching materials simplifying complex technical topics including LLM applications, data privacy, and cloud computing basics.</li>
+                        <li>Guided capstone projects from problem definition through design, development, and final presentation — improving student project completion rates.</li>
+                        <li>Provided one-on-one mentoring, strengthening student confidence in technical problem-solving and preparation for technology job markets.</li>
+                    </ul>
+                </div>
+
+                <div class="exp-divider"></div>
+
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <div>
+                            <div class="exp-company">Avitech Internet Solutions</div>
+                            <div class="exp-role">Customer Service Agent</div>
+                        </div>
+                        <span class="exp-date">Jan – May 2024</span>
+                    </div>
+                    <p class="exp-summary">Handled multi-channel customer support for an internet service provider — logging issues, providing technical guidance, and improving documentation quality.</p>
+                    <ul class="exp-list">
+                        <li>Handled user inquiries across phone, email, and live chat with high accuracy, professionalism, and consistent fast resolution times.</li>
+                        <li>Logged and categorized recurring technical issues systematically — skills directly applicable to annotation QA and structured data workflows.</li>
+                        <li>Translated complex technical troubleshooting steps into clear, user-friendly language for non-technical audiences — demonstrating strong written communication.</li>
+                        <li>Identified patterns in common customer problems, contributing to structured documentation improvements that reduced repeat support requests.</li>
+                    </ul>
+                </div>
+
+                <div class="exp-divider"></div>
+
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <div>
+                            <div class="exp-company">Chaggo Milling Plant</div>
+                            <div class="exp-role">IT Support Staff</div>
+                        </div>
+                        <span class="exp-date">Jun – Dec 2023</span>
+                    </div>
+                    <p class="exp-summary">Provided IT infrastructure support and digitization of manual business workflows for a manufacturing operation.</p>
+                    <ul class="exp-list">
+                        <li>Digitized manual record workflows using spreadsheet templates and automation scripts, cutting reporting time and reducing data entry errors significantly.</li>
+                        <li>Maintained local networking infrastructure, system security configurations, data backups, and printer/peripheral hardware across the facility.</li>
+                        <li>Provided first-line technical support for staff across hardware, software, and connectivity issues — ensuring minimal operational downtime.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- KEY PROJECTS -->
+            <div class="cv-section">
+                <div class="cv-section-title">Selected Projects</div>
+
+                <div class="project-entry">
+                    <div class="project-name">🤖 AI Prompt Evaluation &amp; RLHF Dataset</div>
+                    <div class="project-desc">Designed a repeatable evaluation framework for comparing LLM outputs, scoring on accuracy, helpfulness, reasoning quality, naturalness, and safety. Produced structured RLHF preference datasets with detailed per-turn rationales across 200+ evaluation tasks — suitable for direct LLM fine-tuning workflows.</div>
+                    <div class="tool-tags" style="margin-top:6px"><span class="tool-tag ai">RLHF</span><span class="tool-tag ai">Prompt Engineering</span><span class="tool-tag ai">SxS Ranking</span><span class="tool-tag ai">Rationale Writing</span></div>
+                </div>
+
+                <div class="project-entry">
+                    <div class="project-name">🏷️ Image Classification Dataset Pipeline</div>
+                    <div class="project-desc">Built an end-to-end data annotation pipeline using CVAT and Label Studio — collecting, labeling, and validating a multi-class image dataset with bounding boxes, instance segmentation masks, and multi-layer QA review. Delivered clean, versioned, model-ready datasets with full documentation.</div>
+                    <div class="tool-tags" style="margin-top:6px"><span class="tool-tag ann">CVAT</span><span class="tool-tag ann">Label Studio</span><span class="tool-tag ann">Computer Vision</span><span class="tool-tag ann">QA Workflow</span></div>
+                </div>
+
+                <div class="project-entry">
+                    <div class="project-name">🔐 Network Security Audit Tool</div>
+                    <div class="project-desc">Developed a Python-based network scanner and vulnerability reporting workflow for controlled lab environments — performing open-service detection, banner capture, port enumeration, and generating structured security assessment reports with remediation recommendations.</div>
+                    <div class="tool-tags" style="margin-top:6px"><span class="tool-tag cyb">Python</span><span class="tool-tag cyb">Nmap</span><span class="tool-tag cyb">Kali Linux</span><span class="tool-tag cyb">Security Audit</span></div>
+                </div>
+
+                <div class="project-entry">
+                    <div class="project-name">🦾 IoT Sensor Monitoring Dashboard</div>
+                    <div class="project-desc">Created a real-time monitoring dashboard for Arduino sensor readings with configurable alert thresholds, multi-device status panels, historical data charts, and automated CSV logging. Demonstrated integration of hardware sensor streams with a responsive web-based control interface.</div>
+                    <div class="tool-tags" style="margin-top:6px"><span class="tool-tag bot">Arduino</span><span class="tool-tag bot">IoT</span><span class="tool-tag bot">MQTT</span><span class="tool-tag bot">Dashboard</span></div>
+                </div>
+
+                <div class="project-entry">
+                    <div class="project-name">💻 Digital Water Management Platform</div>
+                    <div class="project-desc">Delivered a live full-stack admin platform for water service delivery — featuring role-based access control (RBAC), customer account management, payment tracking, service request workflows, audit logs, and real-time operational dashboards. <a href="https://water-admin-59f6pdmoo-acasvitals-projects.vercel.app/login">Open live demo</a></div>
+                    <div class="tool-tags" style="margin-top:6px"><span class="tool-tag">React</span><span class="tool-tag">Node.js</span><span class="tool-tag">Firebase</span><span class="tool-tag">RBAC</span><span class="tool-tag">Vercel</span></div>
+                </div>
+
+                <div class="project-entry">
+                    <div class="project-name">🌐 Personalization Quality Evaluation Framework</div>
+                    <div class="project-desc">Developed a structured methodology for assessing AI response personalization quality — identifying grounding failures, integration gaps, incorrect inferences, and forced connections in multi-turn conversation model outputs. Applied systematically across LLM evaluation tasks on Outlier AI.</div>
+                    <div class="tool-tags" style="margin-top:6px"><span class="tool-tag ai">Personalization</span><span class="tool-tag ai">LLM Evaluation</span><span class="tool-tag ai">Quality Assessment</span><span class="tool-tag ai">Analytical Rigor</span></div>
+                </div>
+            </div>
+
+            <!-- REFERENCES -->
+            <div class="cv-section">
+                <div class="cv-section-title">References</div>
+
+                <div class="project-entry">
+                    <div class="project-name">Daniel Sigei</div>
+                    <div class="project-desc">C.E.O, Chago Milling Plant<br>Phone: +254 723 216 811<br>Email: dksigei@gmail.com</div>
+                </div>
+
+                <div class="project-entry">
+                    <div class="project-name">Jared Ohiambo</div>
+                    <div class="project-desc">Phone: +254 704 684 936<br>Email: achilajared@gmail.com</div>
+                </div>
+            </div>
+
+        </main>
+    </div><!-- .cv-body -->
+</div><!-- #cv-content -->
+</div><!-- .cv-wrapper -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+    function downloadPDF() {
+        const btn = document.querySelector('.btn-dl');
+        btn.textContent = '⏳ Generating...';
+        btn.disabled = true;
+
+        const element = document.getElementById('cv-content');
+        const opt = {
+            margin:       [8, 8, 8, 8],
+            filename:     'Brian_Mwololo_CV.pdf',
+            image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 2, useCORS: true, logging: false },
+            jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+            pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
+        };
+
+        html2pdf().set(opt).from(element).save().then(() => {
+            btn.innerHTML = '✅ Downloaded!';
+            setTimeout(() => {
+                btn.innerHTML = '⬇ Download PDF';
+                btn.disabled = false;
+            }, 2500);
+        });
+    }
+</script>
+</body>
+</html>

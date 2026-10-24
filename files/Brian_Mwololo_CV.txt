@@ -1,0 +1,287 @@
+================================================================================
+BRIAN MWOLOLO
+================================================================================
+AI Quality Analyst | Personalization Evaluation | Prompt Engineering | LLM Assessment
+AI Evaluation | RLHF Ranking | Model Quality Analysis | Side-by-Side (SxS) Rating
+
+Location  : Nairobi, Kenya (Fully Remote — Full-Time Availability)
+Phone     : +254799114352
+Email     : mwololokamum@gmail.com
+GitHub    : github.com/BrianMwololo
+LinkedIn  : https://www.linkedin.com/in/brian-mwololo-08a956387/
+Portfolio : portfolio-ecru-theta-47.vercel.app
+
+================================================================================
+PROFESSIONAL PROFILE
+================================================================================
+
+BSc Applied Computing graduate and experienced AI Quality professional with a
+strong background in LLM evaluation, RLHF ranking, prompt engineering, and model
+response analysis. I bring a rare combination of creative prompt design skills and
+sharp analytical rigor to AI quality workflows — assessing nuanced model outputs
+across dimensions like Grounding, Integration, Helpfulness, and Naturalness.
+
+Currently working across Outlier AI, Appen, Remotasks, and Toloka AI, I have
+evaluated 200+ AI model outputs through side-by-side (SxS) comparisons, written
+structured rationales for model rankings, flagged poor inferences and forced
+connections, and contributed directly to RLHF fine-tuning pipelines. I am
+proficient in English, self-motivated, remote-ready, and available full-time to
+contribute to global, 24-hour AI operations teams.
+
+================================================================================
+KEY QUALIFICATIONS — TURING AI QUALITY ANALYST ROLE
+================================================================================
+
+• English Proficiency: Native-level written and verbal English communication.
+  Skilled at writing clear, concise, and structured rationales explicitly
+  referencing specific conversation turns, evaluation criteria, and quality flags.
+
+• Analytical Thinking: Demonstrated ability to evaluate nuanced and ambiguous AI
+  responses — assessing personalization quality, detecting incorrect inferences,
+  identifying poor integrations, and spotting forced connections in model outputs.
+
+• Prompt Engineering: Experienced in designing creative, multi-turn evaluation
+  prompts from diverse personal contexts to thoroughly probe model capabilities
+  and personalization features.
+
+• SxS Evaluation Acumen: Extensive side-by-side model response comparison
+  experience — spotting subtle differences in naturalness, relevance, over-
+  narrating behavior, and response helpfulness with meticulous attention to detail.
+
+• Personalization Assessment: Strong understanding of personalization concepts
+  including grounding in context, integration of prior signals, and helpfulness
+  in personalized AI response delivery.
+
+• Independent Remote Worker: Self-motivated and disciplined in async remote
+  environments with consistent quality performance across all platforms.
+
+• Schedule Flexibility: Fully available full-time in East Africa Time (EAT,
+  UTC+3) — aligned with global 24-hour operations team requirements.
+
+• Technical Setup: Desktop/laptop setup with a reliable high-speed internet
+  connection, ready for immediate deployment.
+
+================================================================================
+AI EVALUATION & QUALITY ANALYSIS EXPERIENCE
+================================================================================
+
+OUTLIER AI (Scale AI) — AI Training & Evaluation Specialist (Freelance)
+2025 — Present | Remote
+
+Evaluated and ranked LLM outputs across coding, reasoning, and creative writing
+tasks — contributing directly to RLHF fine-tuning pipelines with structured
+analytical feedback.
+
+• Conducted side-by-side (SxS) model response comparisons across 200+ tasks —
+  assessing response quality on dimensions including helpfulness, accuracy,
+  naturalness, and instruction-following.
+• Wrote detailed, structured rationales for model rankings, explicitly referencing
+  evaluation criteria, task requirements, and specific response characteristics.
+• Designed and evaluated multi-turn prompts from diverse personal contexts to
+  assess how well models interpreted and responded to user intent.
+• Identified subtle quality differences between model responses — including
+  over-narrating behavior, forced connections, and poor inferences — with
+  meticulous attention to detail.
+• Evaluated AI-generated code outputs (Python, JavaScript, SQL) for correctness,
+  style, reasoning quality, and alignment with instructions.
+• Flagged harmful, biased, and factually incorrect outputs following platform
+  safety annotation guidelines.
+• Maintained annotation accuracy consistently above platform quality benchmarks.
+• Contributed to instruction-following, mathematical reasoning, and creative
+  writing evaluation projects.
+
+Tools: Outlier AI platform, RLHF ranking interface, Scale AI tasking portal.
+
+--------------------------------------------------------------------------------
+
+APPEN — AI Response Evaluator & Data Annotator (Freelance)
+2024 — Present | Remote
+
+Evaluated chatbot, virtual assistant, and search engine AI responses across
+helpfulness, naturalness, safety, and relevance dimensions.
+
+• Evaluated chatbot and virtual assistant responses for naturalness, helpfulness,
+  safety, and accuracy — closely aligning with personalization quality assessment
+  methodologies.
+• Assessed and ranked search engine result relevance across multiple locales and
+  query types — developing strong understanding of grounding and contextual
+  integration in AI outputs.
+• Contributed to social media content relevance and safety evaluation projects
+  requiring nuanced quality judgment on ambiguous responses.
+• Applied detailed annotation guidelines consistently across high-volume tasks,
+  maintaining quality scores above acceptance thresholds.
+• Wrote concise, well-justified evaluation rationales for AI response comparisons.
+
+Tools: Appen Connect portal, Figure Eight annotation interfaces.
+
+--------------------------------------------------------------------------------
+
+REMOTASKS (Scale AI) — AI Data Specialist (Freelance)
+2024 — Present | Remote
+
+Completed high-volume AI evaluation and annotation tasks with consistent quality
+performance and proficiency certifications.
+
+• Participated in quality assurance review rounds — catching and correcting
+  annotation and evaluation errors in collaborative team projects.
+• Applied strict guideline interpretation for ambiguous edge cases requiring
+  careful analytical judgment.
+• Achieved Bronze and Silver proficiency certifications across multiple task types.
+
+Tools: Remotasks platform, Scale AI annotation and evaluation tools.
+
+--------------------------------------------------------------------------------
+
+TOLOKA AI (Yandex) — AI Crowdsourcing Evaluator (Freelance)
+2023 — Present | Remote
+
+Contributed to global AI datasets requiring consistent quality judgment across
+relevance, classification, and ranking tasks.
+
+• Assessed web page quality and search engine result relevance for AI dataset
+  improvement — applying personalization and contextual grounding judgment.
+• Compared and categorized product listings, news articles, and social content
+  for NLP classification and ranking tasks.
+• Maintained consistently high acceptance rates through disciplined guideline
+  adherence across large task pools.
+
+Tools: Toloka platform, quality-control pools.
+
+================================================================================
+ADDITIONAL PROFESSIONAL EXPERIENCE
+================================================================================
+
+MINISTRY OF EDUCATION — DLP Intern
+October 2025 — Present | Nairobi, Kenya
+
+• Applied data quality control discipline — reviewing, flagging, and correcting
+  data anomalies in government education systems.
+• Maintained strict confidentiality, data protection, and access-control practices
+  aligned with institutional data governance requirements.
+• Documented workflows and improved usability of internal digital platforms.
+
+--------------------------------------------------------------------------------
+
+LUKENYA COLLEGE — ICT Tutor
+September 2024 — November 2025 | Machakos, Kenya
+
+• Introduced students to AI and machine learning concepts, preparing them for
+  emerging technology job markets.
+• Created accessible materials simplifying complex technical topics including AI
+  fundamentals, data privacy, and LLM applications.
+• Provided one-on-one mentoring, strengthening communication and user-centered
+  technical explanation skills.
+
+--------------------------------------------------------------------------------
+
+AVITECH INTERNET SOLUTIONS — Customer Service Agent
+January 2024 — May 2024 | Nairobi, Kenya
+
+• Identified and logged recurring customer problems, contributing to structured
+  documentation improvements.
+• Translated complex technical troubleshooting steps into clear, user-friendly
+  guidance — demonstrating strong written communication skills.
+
+================================================================================
+CORE SKILLS — AI QUALITY & EVALUATION
+================================================================================
+
+EVALUATION & ANALYTICAL SKILLS
+• Side-by-side (SxS) model response comparison and preference ranking
+• Personalization quality assessment: Grounding, Integration, Helpfulness
+• Nuanced AI response evaluation for naturalness, relevance, and accuracy
+• Detection of incorrect personalization, poor inferences, and forced connections
+• Multi-turn prompt design based on personal context and user scenarios
+• RLHF ranking and structured rationale writing with turn-level references
+• Edge case analysis and ambiguous response quality judgment
+• Meticulous attention to detail across high-volume evaluation workflows
+• Safety review: bias, harm, and factual error flagging
+• Written evaluation feedback: clear, concise, and well-structured rationales
+
+COMMUNICATION & COLLABORATION
+• Superior English written communication for structured analytical rationales
+• Clear documentation, professional reporting, and concise feedback writing
+• Remote collaboration across async task platforms and review cycles
+• Self-motivated, independent worker with strong remote work discipline
+
+TECHNICAL SKILLS
+• Platforms: Outlier AI, Appen Connect, Remotasks, Toloka AI, Scale AI portal
+• Development: Python, JavaScript, React, HTML/CSS, Node.js
+• Databases: MySQL, PostgreSQL, Firebase
+• Tools: CVAT, Label Studio, Labelbox, Prodigy, Argilla
+• Other: Git, GitHub, Vercel, Figma, Kali Linux (lab), Linux CLI
+
+================================================================================
+EDUCATION
+================================================================================
+
+BSc in Applied Computing
+Kenya
+Relevant coursework: Software Engineering, Database Systems, Human-Computer
+Interaction, Data Structures, Networking, Cybersecurity Fundamentals,
+Mobile Application Development, Operating Systems.
+
+================================================================================
+CERTIFICATIONS & TRAINING
+================================================================================
+
+• Remotasks: Bronze & Silver Proficiency Certifications (evaluation & annotation)
+• Appen Connect: Active contributor — maintained quality above acceptance threshold
+• Outlier AI: Active AI Evaluation Specialist — coding, reasoning, creative tasks
+• Cybersecurity fundamentals (TryHackMe, OWASP resources)
+• Google IT Support fundamentals (coursework equivalent)
+
+================================================================================
+KEY PROJECTS
+================================================================================
+
+AI PROMPT EVALUATION & RLHF DATASET
+Designed an evaluation framework for comparing LLM outputs, scoring responses on
+accuracy, helpfulness, reasoning quality, naturalness, and safety. Produced
+structured RLHF preference datasets with detailed per-turn rationales suitable
+for LLM fine-tuning workflows.
+Tags: RLHF, Prompt Engineering, SxS Evaluation, Rationale Writing
+
+PERSONALIZATION QUALITY EVALUATION FRAMEWORK
+Developed a personal evaluation methodology for assessing AI response
+personalization — identifying grounding failures, integration gaps, and forced
+connections in model outputs. Applied across multi-turn conversation assessments.
+Tags: Personalization, LLM Evaluation, Analytical Rigor, Quality Assessment
+
+IMAGE CLASSIFICATION DATASET PIPELINE
+Built an end-to-end data annotation pipeline using CVAT and Label Studio —
+collecting, labeling, and validating a multi-class image dataset with bounding
+boxes and segmentation masks.
+Tags: CVAT, Label Studio, Computer Vision, QA Workflow
+
+DIGITAL WATER MANAGEMENT PLATFORM
+Designed a full-stack platform for water service delivery with role-based access
+control and audit logs.
+Live demo: https://water-admin-59f6pdmoo-acasvitals-projects.vercel.app/login
+Tags: Web Platform, RBAC, Full-Stack
+
+================================================================================
+AVAILABILITY
+================================================================================
+
+• Remote work: Fully available — immediate start
+• Time Zone: East Africa Time (EAT, UTC+3) — aligned with global 24-hr ops teams
+• Schedule: Full-time availability
+• Notice period: Immediate availability
+• Primary Google Account: Personal primary account available for genuine
+  personalization assessment using Gmail, Google Search, and YouTube activity
+
+================================================================================
+REFERENCES
+================================================================================
+
+Daniel Sigei
+C.E.O, Chago Milling Plant
+Phone: +254 723 216 811
+Email: dksigei@gmail.com
+
+Jared Ohiambo
+Phone: +254 704 684 936
+Email: achilajared@gmail.com
+
+================================================================================
